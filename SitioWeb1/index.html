@@ -3,31 +3,109 @@
 <html lang="es">
  
 <head>
+
 <title>Clase Responsive Web Disign</title>
+
+<script type="text/javascript"> alert("Bienvenidos a Curso de RWD") 
+</script>
+
+<script type="text/javascript">
+function miFuncion()
+{
+alert("Activaste la funcion miFuncion()");
+}
+</script>
+
 <meta charset="utf-8" />
-<link rel="stylesheet" href="estilos.css" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="alternate" title="Pozolería RSS" type="application/rss+xml" href="/feed.rss" />
+
+<style type="text/css">
+  p { color: black; font-family: Verdana; }
+</style>
+
+<style type="text/css">
+/*body{background-color:blue}*/
+body{background-color:rgb(157,213,255)}
+header{background-color:rgb(165,187,191)}
+
+</style>
+
+
 </head>
  
 <body>
     <header>
-       <h1>Responsive Web Disign/h1>
-       <p>Mi sitio web creado en html5</p>
+       <h1><font color="blue" face="Arial" size="7"> Responsive Web Disign </font></h1>
     </header>
     <section>
        <article>
-           <h2>Titilo de contenido<h2>
-           <p> Contenido (ademas de imagenes, citas, videos etc.) </p>
-           <p> Este es un sitio de Prueba</p>
+           <h2> Modulo 2 Responsive Web Disign <h2>
+           <p> Temas a Tratar</p>
+           <li> HTML5</li>
+           <li> CSS</li>
+           <li> Java Script</li>
        </article>
     </section>
-    <aside>
-       <h3>Titulo de contenido</h3>
-           <p>contenido</p>
-    </aside>
+<!-- table -->
+<table style="width:50%" border="0">
+<!-- row -->
+  <tr>
+  <!-- Column -->
+    <th>Que es HTML5</th>
+    <th>Que es CSS</th> 
+  </tr>
+
+  <tr>
+    <td>
+HTML is the standard markup language for creating Web pages.
+<p>
+HTML stands for Hyper Text Markup Language
+HTML describes the structure of Web pages using markup
+HTML elements are the building blocks of HTML pages
+HTML elements are represented by tags
+HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+Browsers do not display the HTML tags, but use them to render the content of the page</p>
+
+    </td>
+    <td>
+      CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+
+    </td> 
+  </tr>
+
+</table>
+
+
+<!--     <table style="width:50%" border="1">
+  <tr>
+    <th>Tema</th>
+    <th>Horas</th> 
+  </tr>
+  <tr>
+    <td>HTML5</td>
+    <td>2</td> 
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>4</td> 
+  </tr>
+    <tr>
+    <td>Java Script</td>
+    <td>4</td> 
+  </tr>
+</table> -->
+
+<form>
+<input type="button" 
+onclick="miFuncion()" 
+value="Activar Función"
+color= "blue">
+</form>
+
     <footer>
-        Creado por mi el 2011
+        Creado por John Molina 07/10/2016
     </footer>
 </body>
 </html>
