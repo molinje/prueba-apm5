@@ -1,0 +1,23 @@
+{
+  "name": "prueba-apm5",
+  "version": "1.0.0",
+  "description": "Prueba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molinje/prueba-apm5.git"
+  },
+  "keywords": [
+    "Prueba",
+    "John"
+  ],
+  "author": "John Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molinje/prueba-apm5/issues"
+  },
+  "homepage": "https://github.com/molinje/prueba-apm5#readme"
+}
