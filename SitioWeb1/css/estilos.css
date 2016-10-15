@@ -1,14 +1,93 @@
 
-
-
-
 body{
-	background-color:rgb(157,213,255)
+	background-color:rgb(157,213,255);
+	
+
+
 }
 
 header{
 	background-color:rgb(165,187,191)
 }
 
-  p { 
-  	color: black; font-family: Verdana; }
+ /* p { 
+  	color: black; font-family: Verdana; }*/
+
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.columna1, 
+.columna2, 
+.columna3 {
+  width: 100%;
+}
+
+
+@media only screen and (min-width:0px) and (max-width: 480px)  {
+
+body{
+	color: red;
+
+   .columna1 {
+    width: 60%;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .columna2 {
+    width: 40%;
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .columna3 {
+    width: 100%;
+    -webkit-order: 3;
+    order: 3;
+  }
+}
+
+
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 765px)  {
+
+body{
+	color: green;}
+
+	  .columna2, 
+  .columna3 {
+    width: 20%;
+  }
+
+
+}
+
+
+}
+
+@media only screen and (min-width:766px) and (max-width: 995px)  {
+
+body{
+	color: blue;}
+
+
+}
+
+@media only screen and (min-width:996px)  {
+
+body{
+	color: orange;}
+
+
+}
+
+
+
+
