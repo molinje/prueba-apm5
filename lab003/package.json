@@ -1,0 +1,15 @@
+{
+  "name": "lab003",
+  "version": "1.0.0",
+  "description": "lab003",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "john",
+    "lab003"
+  ],
+  "author": "John Molina",
+  "license": "ISC"
+}
