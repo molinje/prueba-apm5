@@ -1,0 +1,2 @@
+Generar texto para archivo .gitignore
+https://www.gitignore.io/
