@@ -9,35 +9,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Product = (function () {
-    function Product() {
+var PRODUCTS = [
+    {
+        id: 1,
+        name: "Samsung galaxy 8",
+        description: "telefono que explota",
+        type: "smartphone",
+        price: 1500000,
+        quantity: 20
+    },
+    {
+        id: 2,
+        name: "Samsung galaxy 10",
+        description: "telefono que explota",
+        type: "smartphone",
+        price: 1500000,
+        quantity: 20
+    },
+    {
+        id: 3,
+        name: "Samsung galaxy 20",
+        description: "telefono que explota",
+        type: "smartphone",
+        price: 1500000,
+        quantity: 20
     }
-    return Product;
-}());
-exports.Product = Product;
+];
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "Ride";
+        this.title = "Mis productos";
         this.products = PRODUCTS;
     }
     AppComponent.prototype.onSelect = function (product) {
         this.selected = product;
-        product.total_ride = 30 + product.price;
-        this.total = product.total_ride;
-        if (product.flag_selec == "X") {
-            product.flag_selec = "";
-        }
-        else if (product.flag_selec != "X") {
-            product.flag_selec = "X";
-        }
-    };
-    AppComponent.prototype.Calcular = function (product, total) {
-        console.log(this.total);
-        console.log("paso");
-        if (product.flag_selec == "X") {
-            this.total = this.total + product.price;
-            console.log(this.total);
-        }
     };
     AppComponent = __decorate([
         core_1.Component({
@@ -49,41 +53,4 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-var PRODUCTS = [
-    {
-        id: 1,
-        name: "Airport",
-        price: 3900,
-        total_ride: 0,
-        flag_selec: ""
-    },
-    {
-        id: 2,
-        name: "App",
-        price: 700,
-        total_ride: 0,
-        flag_selec: ""
-    },
-    {
-        id: 3,
-        name: "Units",
-        price: 50,
-        total_ride: 0,
-        flag_selec: ""
-    },
-    {
-        id: 4,
-        name: "Festives",
-        price: 1900,
-        total_ride: 0,
-        flag_selec: ""
-    },
-    {
-        id: 5,
-        name: "Default",
-        price: 4100,
-        total_ride: 0,
-        flag_selec: ""
-    }
-];
 //# sourceMappingURL=app.component.js.map

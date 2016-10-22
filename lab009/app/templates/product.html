@@ -28,6 +28,7 @@
          <input type="checkbox" name="valor" value="Bike" >
         <span>{{product.id}}</span> {{product.name | uppercase }} 
     </li>
+    <input type="submit" value="Calcular(product)">
 </ul>
 
 <div *ngIf="selected">
@@ -38,13 +39,12 @@
     <input [(ngModel)]="selected.price" placeholder="precio"><br />
     <label>Total: </label><br />
     <input [(ngModel)]="selected.total_ride" placeholder="total"><br />
-    <h1 {{selected.total_ride}}> 
-
 </div>
 
 
 <
 <!-- <div>
+    <h1 {{selected.total_ride}}> 
   <label>Total: </label><br />
     <input [(ngModel)]="product.quantity" placeholder="cantidad"><br />
 </div>    --> 

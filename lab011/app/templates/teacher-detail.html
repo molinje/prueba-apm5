@@ -1,0 +1,18 @@
+<div *ngIf="teacher">
+    <hr />
+    <label>Name: </label><br />
+    <input [(ngModel)]="teacher.name" placeholder="name"><br />
+
+        <label>Rooms: </label><br />
+    <input [(ngModel)]="teacher.rooms" placeholder="rooms"><br />
+
+
+        <ul>
+    <li *ngFor="let room of teacher.rooms, let i = index" 
+    >
+    <input [(ngModel)]="teacher.rooms[i]" placeholder="rooms">
+        <span>{{teacher.rooms}}</span> {{teacher.rooms[i] | uppercase }} 
+    </li>
+        </ul> 
+
+</div>
