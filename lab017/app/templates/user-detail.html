@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1>
+<div *ngIf="user">
+    <hr />
+    <label>Name: </label><br />
+    <input [(ngModel)]="user.name" placeholder="name"><br />
+    <label>Documento: </label><br />
+    <textarea [(ngModel)]="user.cc" placeholder="cc"></textarea><br />
+    <label>Telefono: </label><br />
+    <input [(ngModel)]="user.telefono" placeholder="telefono"><br />
+    <label>Celular: </label><br />
+    <input [(ngModel)]="user.celular" placeholder="celular"><br />
+    <label>Direccion: </label><br />
+    <input [(ngModel)]="user.direccion" placeholder="direccion"><br />
+</div>
