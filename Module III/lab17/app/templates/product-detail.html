@@ -1,0 +1,15 @@
+<hr />
+<div *ngIf="product">
+    <h3>{{title}}</h3>
+    <label>Name: </label><br />
+    <input [(ngModel)]="product.name" placeholder="name"><br />
+    <label>Description: </label><br />
+    <textarea [(ngModel)]="product.description" placeholder="description"></textarea><br />
+    <label>Type: </label><br />
+    <input [(ngModel)]="product.type" placeholder="type"><br />
+    <label>Price: </label><br />
+    <input [(ngModel)]="product.price" placeholder="price"><br />
+    <label>Quantity: </label><br />
+    <input [(ngModel)]="product.quantity" placeholder="quantity"><br />
+    <button (click)="save()">Save</button>
+</div>
