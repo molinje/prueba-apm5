@@ -42,7 +42,20 @@ ionic g page pagelist
 
 
 ionic start lab03 sidemenu --ts --v2 
+ionic start lab13 blank --ts --v2 
 
 
 ionic g page page1
+
+
+
+ionic start lab03 tabs --ts --v2 
+
+ionic plugin add cordova-plugin-network-information
+
+Instalar Plugin Network
+ionic plugin add cordova-plugin-network-information
+
+Herramienta para 
+chrome://inspect 
 
