@@ -1,0 +1,33 @@
+Comando crear Proyecto ionic
+ionic start lab08 blank --ts --v2 --id com.app.lab08 --appname "lab08"
+
+Agregar la plataforma sobre la cual se va a crear el proyecto... para este caso android
+ionic platform add android
+
+npm install
+
+npm --save-dev
+
+ionic build android
+
+
+Muestra lista de dispositivos conectados
+adb devices
+
+Ejecutar sobre dispositivo xxxx = dispositivo
+ionic run android --target=xxxx
+
+
+ionic emulate android 
+
+
+ionic serve --lab
+
+http://www.tiagoporto.com/blog/environment-setting-tutorial-ionic-android-on-windows/
+
+
+
+ionic start lab08 blank --ts --v2 --id com.app.lab08 --appname "lab08"
+ionic platform add android
+ionic build android
+ionic serve --lab
