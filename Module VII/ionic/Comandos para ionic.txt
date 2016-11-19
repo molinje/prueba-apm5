@@ -30,4 +30,19 @@ http://www.tiagoporto.com/blog/environment-setting-tutorial-ionic-android-on-win
 ionic start lab08 blank --ts --v2 --id com.app.lab08 --appname "lab08"
 ionic platform add android
 ionic build android
+ionic emulate android
 ionic serve --lab
+
+adicionar provider
+ionic g provider MyData
+
+adicionar page 
+ionic g page pagelist
+
+
+
+ionic start lab03 sidemenu --ts --v2 
+
+
+ionic g page page1
+

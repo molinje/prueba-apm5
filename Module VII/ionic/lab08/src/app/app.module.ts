@@ -2,11 +2,17 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { PagelistPage } from '../pages/pagelist/pagelist';
+import { ProductService } from '../providers/product-service';
+
+
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    PagelistPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -14,8 +20,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    PagelistPage
   ],
-  providers: []
+  providers: [ProductService]
 })
 export class AppModule {}
