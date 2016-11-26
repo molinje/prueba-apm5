@@ -17,6 +17,8 @@ adb devices
 Ejecutar sobre dispositivo xxxx = dispositivo
 ionic run android --target=xxxx
 
+ionic run android --target=192.168.166.101:5555
+
 
 ionic emulate android 
 
@@ -76,3 +78,16 @@ ionic plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaS
 
 Activar telefono HTC para developer
 http://www.xatakandroid.com/tutoriales/como-activar-las-opciones-de-desarrollo-en-android-4-2-jelly-bean
+
+
+ionic start lab17 blank --ts --v2 --id com.app.lab17 --appname "lab17"
+
+Instrucciones para proyecto con Google maps
+
+ionic start lab17 blank --ts --v2 --id com.app.lab17 --appname "lab17"
+ionic platform add android
+ionic plugin add cordova-plugin-geolocation
+npm install --save @types/googlemaps
+
+AIzaSyC5QGhS21iFxIQ8HxKeI5-ehVyStWUFp0Y
+AIzaSyBKrHG2q5rAwb9-vSA5uAuXB5mgUcqAySM
