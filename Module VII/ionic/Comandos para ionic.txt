@@ -59,3 +59,20 @@ ionic plugin add cordova-plugin-network-information
 Herramienta para 
 chrome://inspect 
 
+
+adicionar Plugin Dialogs
+ionic plugin add cordova-plugin-dialogs
+
+API Geolocation
+ionic plugin add cordova-plugin-geolocation
+
+clave de la API: 
+Para usar esta clave en tu aplicación, transfiérela como un parámetro key=API_KEY
+
+AIzaSyC5QGhS21iFxIQ8HxKeI5-ehVyStWUFp0Y
+
+
+ionic plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyC5QGhS21iFxIQ8HxKeI5-ehVyStWUFp0Y" --variable API_KEY_FOR_IOS="AIzaSyC5QGhS21iFxIQ8HxKeI5-ehVyStWUFp0Y"
+
+Activar telefono HTC para developer
+http://www.xatakandroid.com/tutoriales/como-activar-las-opciones-de-desarrollo-en-android-4-2-jelly-bean
