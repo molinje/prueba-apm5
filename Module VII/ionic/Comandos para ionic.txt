@@ -91,3 +91,8 @@ npm install --save @types/googlemaps
 
 AIzaSyC5QGhS21iFxIQ8HxKeI5-ehVyStWUFp0Y
 AIzaSyBKrHG2q5rAwb9-vSA5uAuXB5mgUcqAySM
+
+ionic start lab18 blank --ts --v2 --id com.app.lab18 --appname "lab18"
+ionic platform add android
+ionic plugin add cordova-sqlite-storage
+ionic plugin add cordova-plugin-geolocation
