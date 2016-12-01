@@ -96,3 +96,16 @@ ionic start lab18 blank --ts --v2 --id com.app.lab18 --appname "lab18"
 ionic platform add android
 ionic plugin add cordova-sqlite-storage
 ionic plugin add cordova-plugin-geolocation
+
+
+ionic start lab19 blank --ts --v2 --id com.app.lab19 --appname "lab19"
+ionic platform add android
+ionic plugin add cordova-sqlite-storage
+ionic g provider service
+
+
+ionic start lab20 sidemenu --ts --v2 --id com.app.lab20 --appname "lab20"
+ionic platform add android
+ionic plugin add cordova-plugin-geolocation
+ionic plugin add cordova-sqlite-storage
+ionic g provider service
