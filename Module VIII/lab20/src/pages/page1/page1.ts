@@ -3,7 +3,7 @@ import {Geolocation} from 'ionic-native';
 
 import { Storage } from '@ionic/storage';
 import { NavController, AlertController } from 'ionic-angular';
-import { CoordinateService } from '../../providers/service'
+import { CoordinateService } from '../../providers/service';
 
 @Component({
   selector: 'page-page1',
@@ -34,7 +34,18 @@ export class Page1 {
     	console.log(res); 
     	this.data.latitude = res['latitude']; 
     	this.data.longitude = res['longitude']
+
+    let alert = this.alertCtrl.create({
+      title: 'New Friend!',
+      message: this.data.latitude,
+      buttons: ['Ok']
     });
+    alert.present()
+    }
+
+
+
+    );
   }
 
 
