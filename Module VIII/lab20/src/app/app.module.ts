@@ -4,6 +4,8 @@ import { MyApp } from './app.component';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { CoordinateService } from '../providers/service';
+import { Storage } from '@ionic/storage';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { CoordinateService } from '../providers/service';
     Page1,
     Page2
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, CoordinateService ]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, 
+  CoordinateService,
+  Storage ]
 })
 export class AppModule {}

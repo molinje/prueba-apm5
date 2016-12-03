@@ -19,7 +19,7 @@ export class Page1 {
 
 
     ngOnInit() {
-    Geolocation.getCurrentPosition().then(resp => {
+    Geolocation.getCurrentPosition({enableHighAccuracy:true, maximumAge: 3000, timeout: 5000}).then(resp => {
       this.setDataCoords.latitude = resp.coords.latitude;
       this.setDataCoords.longitude = resp.coords.longitude;
 
@@ -37,7 +37,7 @@ export class Page1 {
 
     let alert = this.alertCtrl.create({
       title: 'New Friend!',
-      message: this.data.latitude,
+      message: "Latitude " + ' ' + this.data.latitude + ' ' + 'Longitude ' + this.data.longitude ,
       buttons: ['Ok']
     });
     alert.present()
