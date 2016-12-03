@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { UserService } from '../../providers/service';
+import { User } from '../../model/user';
 
 @Component({
   selector: 'page-about',
@@ -8,8 +10,23 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+	//users: User[];
+    users: any[] = [];
 
+  constructor(public navCtrl: NavController, private userService: UserService) {
+
+  }
+
+   ionViewDidLoad(){
+    this.getAllUsers();
+  }
+
+   getAllUsers(){
+    this.userService.getAll()
+      .then(users => {
+        console.log(users);
+        this.users = users;
+      })
   }
 
 }

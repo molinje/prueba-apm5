@@ -109,3 +109,20 @@ ionic platform add android
 ionic plugin add cordova-plugin-geolocation
 ionic plugin add cordova-sqlite-storage
 ionic g provider service
+
+ionic start lab21 tabs --ts --v2 --id com.app.lab21 --appname "lab21"
+ionic platform add android
+ionic plugin add cordova-plugin-geolocation
+ionic plugin add cordova-sqlite-storage
+ionic g provider service
+
+ionic start lab22 tabs --ts --v2 --id com.app.lab22 --appname "lab22"
+ionic platform add android
+ionic plugin add cordova-sqlite-storage
+ionic g provider service
+
+
+C:\Users\Administrador\Documents\GitHub\prueba-apm5\Module VII\ionic
+lab13 -- En Blanco
+lab09 --Menu de hambuerguesa con n paginas
+lab08 -- Listar Productos

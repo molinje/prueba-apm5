@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import {UserService} from '../providers/service';
+import { UserService } from '../providers/service';
+import { User } from '../../model/user';
 
 import { TabsPage } from '../pages/tabs/tabs';
+
 
 
 @Component({
